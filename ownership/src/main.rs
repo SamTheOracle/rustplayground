@@ -1,3 +1,6 @@
+mod test;
+use test::sub;
+
 fn main() {
     //rust let you decide where to store data, either in the stack or the heap
 
@@ -27,4 +30,5 @@ fn main() {
     //this operation is called moving. After that s1 is not valid anymore
     let s1 = String::from("hello");
     let s2 = s1;
+    sub();
 }//s cannot be user here
